@@ -3,6 +3,6 @@
 
 export const SITE_TITLE = "Annur Riyadhus Solikhin | Portfolio Website";
 export const SITE_DESCRIPTION =
-  "Astrofy is a free and open-source template for your Personal Portfolio Website built with Astro and TailwindCSS. Create in minutes a website with Blog, CV, Project Section, Store and RSS Feed.";
+  "Software & AI Engineer | Informatics Engineering Students";
 export const GENERATE_SLUG_FROM_TITLE = true;
 export const TRANSITION_API = true;
