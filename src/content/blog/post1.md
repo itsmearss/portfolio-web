@@ -1,56 +1,52 @@
 ---
-title: "Demo Post 1"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-pubDate: "Sep 10 2022"
+title: "Build and test a real time human pose classification model using mediapipe and random forest algorithm."
+description: "Dunia computer vision terus berkembang pesat, salah satu aplikasinya yang menarik adalah klasifikasi pose manusia secara real-time.... "
+pubDate: "May 11 2024"
 heroImage: "/post_img.webp"
-tags: ["tokio"]
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer
-malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas
-pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse
-platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada
-fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus
-vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea
-dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst
-quisque sagittis purus sit amet.
+Dunia computer vision terus berkembang pesat, salah satu aplikasinya yang menarik adalah klasifikasi pose manusia secara real-time. Artikel ini akan membahas cara membangun dan menguji model klasifikasi pose manusia menggunakan kombinasi MediaPipe dan algoritma Random Forest.
 
-Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum
-quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet.
-Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus.
-Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit
-ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt
-dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc.
-Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus
-arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed
-tempus urna et pharetra pharetra massa massa ultricies mi.
+Mengenal Komponen:
 
-Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam
-sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec.
-Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna
-fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et
-egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel
-turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra
-nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus
-vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim
-praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus
-egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam
-ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor
-purus non. Amet dictum sit amet justo donec enim.
+MediaPipe: Framework open-source dari Google yang menyediakan pipeline machine learning untuk berbagai tugas computer vision, termasuk pose estimation (estimasi pose). MediaPipe memudahkan kita untuk mendeteksi landmark (titik keypoint) pada tubuh manusia dari video atau gambar.
+Random Forest: Algoritma machine learning yang termasuk dalam kategori ensemble learning. Random Forest bekerja dengan menggabungkan prediksi dari multiple decision tree, menghasilkan klasifikasi yang lebih akurat dan robust.
+Langkah-langkah Membangun Model:
 
-Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut
-consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra.
-Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor
-dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor
-dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque
-eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim
-blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices
-tincidunt arcu. Id cursus metus aliquam eleifend mi.
+Pengumpulan Data:
 
-Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus
-imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu
-cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt
-dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat
-sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida.
-Egestas integer eget aliquet nibh praesent tristique magna.
+Kumpulkan dataset video atau gambar yang berisi berbagai pose manusia yang ingin diklasifikasikan (misalnya, berdiri, jongkok, melamba tangan).
+Dataset ini nantinya akan digunakan untuk melatih model Random Forest.
+Pre-processing Data:
+
+Gunakan MediaPipe untuk memproses data video atau gambar.
+Ekstrak landmark (titik keypoint) pose manusia dari setiap frame video atau gambar.
+Selain landmark, Anda mungkin perlu mengekstrak fitur tambahan seperti jarak antar landmark atau sudut antar tulang.
+Pelatihan Model:
+
+Siapkan data landmark yang telah diekstrak beserta label pose yang sesuai (misalnya, label "berdiri" untuk frame dengan pose berdiri).
+Gunakan library machine learning seperti Scikit-learn untuk melatih model Random Forest dengan data tersebut.
+Random Forest akan belajar mengidentifikasi pola dan hubungan antar landmark untuk memprediksi pose baru.
+Pengujian Model:
+
+Setelah proses pelatihan selesai, uji model Random Forest dengan data yang belum pernah dilihat sebelumnya.
+Evaluasi performa model dengan menghitung akurasi klasifikasi, precision, dan recall untuk setiap pose.
+Sesuaikan parameter model (misalnya, jumlah pohon keputusan) berdasarkan hasil evaluasi untuk meningkatkan akurasi.
+Implementasi Real-Time:
+
+Setelah memiliki model terlatih, gunakan MediaPipe untuk memproses video secara real-time dari webcam atau sumber lainnya.
+Ekstrak landmark pose dari setiap frame video.
+Gunakan model Random Forest yang telah dilatih untuk memprediksi pose manusia secara real-time berdasarkan landmark yang diekstrak.
+Visualisasikan hasil klasifikasi pose pada frame video (misalnya, menampilkan label pose di overlay).
+Keuntungan Menggunakan Random Forest:
+
+Mudah dipahami dan diinterpretasikan.
+Berperforma baik dengan dataset berukuran sedang.
+Tidak terlalu rentan terhadap overfitting.
+Kelemahan Menggunakan Random Forest:
+
+Mungkin membutuhkan waktu pelatihan yang lebih lama dibandingkan algoritma lain.
+Bisa jadi kurang akurat dibandingkan algoritma lain untuk dataset yang sangat besar.
+Kesimpulan:
+
+Kombinasi MediaPipe dan Random Forest menawarkan cara yang efisien untuk membangun model klasifikasi pose manusia real-time. Dengan mengikuti langkah-langkah yang diberikan dan bereksperimen dengan parameter, Anda dapat membangun model yang mampu mengenali berbagai pose manusia secara akurat.
