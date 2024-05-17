@@ -8,6 +8,5 @@ import netlify from "@astrojs/netlify";
 export default defineConfig({
   site: "https://annurrs.netlify.app",
   integrations: [mdx(), sitemap(), tailwind()],
-  output: "server",
   adapter: netlify(),
 });
