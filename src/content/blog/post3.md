@@ -2,7 +2,7 @@
 title: "Virtual Tour: Membuka Gerbang Baru Promosi Obyek Wisata"
 description: "Di era digital yang serba cepat ini, strategi promosi yang inovatif menjadi kunci untuk menarik minat wisatawan....."
 pubDate: "Aug 31 2023"
-heroImage: "/post_img.webp"
+heroImage: "/blog/1.PNG"
 ---
 
 Di era digital yang serba cepat ini, strategi promosi yang inovatif menjadi kunci untuk menarik minat wisatawan. Virtual tour hadir sebagai solusi tepat untuk menghadirkan pengalaman wisata yang imersif dan interaktif, membuka gerbang baru dalam mempromosikan keindahan obyek wisata.

@@ -2,7 +2,7 @@
 title: "Build and test a real time human pose classification model using mediapipe and random forest algorithm."
 description: "Dunia computer vision terus berkembang pesat, salah satu aplikasinya yang menarik adalah klasifikasi pose manusia secara real-time.... "
 pubDate: "May 11 2024"
-heroImage: "/post_img.webp"
+heroImage: "/blog/2.png"
 ---
 
 Dunia computer vision terus berkembang pesat, salah satu aplikasinya yang menarik adalah klasifikasi pose manusia secara real-time. Artikel ini akan membahas cara membangun dan menguji model klasifikasi pose manusia menggunakan kombinasi MediaPipe dan algoritma Random Forest.

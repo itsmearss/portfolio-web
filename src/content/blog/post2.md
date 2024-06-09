@@ -2,7 +2,7 @@
 title: "Menapaki Kesuksesan di Dunia IT: Peran Vital Sertifikasi dalam Membangun dan Menguatkan Karir"
 description: "Dalam dunia IT, sertifikasi IT bukan sekadar pelengkap hardskill dan softskill, melainkan menjadi landasan utama dalam memperkuat karir..."
 pubDate: "Dec 13 2023"
-heroImage: "/post_img.webp"
+heroImage: "/blog/3.jpg"
 ---
 
 Dalam dunia IT, sertifikasi IT bukan sekadar pelengkap hardskill dan softskill, melainkan menjadi landasan utama dalam memperkuat karir. Sejalan dengan pengetahuan mendalam di bidang IT, sertifikasi berperan sebagai tanda keahlian yang sah, meyakinkan bahwa kemampuan yang dimiliki benar-benar mencapai tingkat keahlian yang diakui secara industri.
